@@ -42,3 +42,11 @@ export const EVENT = {
   date: '24 décembre 2026',
   place: 'Bloom Centre Yotsar',
 }
+export const WELCOME = {
+  title: 'Bienvenue à la soirée des Splendeur Awards',
+  paragraphs: [
+    "Chers invités, chers amis de Bloom, cette soirée est la nôtre : celle où nous honorons les personnes qui, jour après jour, font briller notre communauté.",
+    "Prenez quelques minutes pour nommer celles et ceux qui vous ont marqué cette année, dans chacune des cinq distinctions. Chaque nomination est une manière de dire merci.",
+  ],
+  signature: 'Avec toute notre reconnaissance.',
+}
