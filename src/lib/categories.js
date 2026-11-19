@@ -39,6 +39,6 @@ export const CATEGORIES = [
 export const EVENT = {
   name: 'Splendeur Awards',
   year: '2026',
-  date: '12 décembre 2026',
+  date: '24 décembre 2026',
   place: 'Bloom Centre Yotsar',
 }
