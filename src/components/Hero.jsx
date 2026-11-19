@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { EVENT } from '../lib/categories.js'
+import { EVENT, WELCOME } from '../lib/categories.js'
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 24 },
@@ -33,19 +33,27 @@ export default function Hero() {
         <i /> <b>◆</b> <i />
       </motion.div>
 
-      <motion.p {...fade(0.85)} className="hero-sub">
+      <motion.div {...fade(0.85)} className="hero-welcome">
+        <p className="hero-welcome-title">{WELCOME.title}</p>
+        {WELCOME.paragraphs.map((p) => (
+          <p key={p}>{p}</p>
+        ))}
+        <p className="hero-welcome-sign">{WELCOME.signature}</p>
+      </motion.div>
+
+      <motion.p {...fade(1)} className="hero-sub">
         Nommez les personnalités qui illuminent <strong>Bloom</strong>.
         <br />
         Cinq distinctions, une seule soirée d'exception.
       </motion.p>
 
-      <motion.div {...fade(1)} className="hero-meta">
+      <motion.div {...fade(1.15)} className="hero-meta">
         <span>{EVENT.date}</span>
         <span className="dot" />
         <span>{EVENT.place}</span>
       </motion.div>
 
-      <motion.a {...fade(1.15)} href="#nominer" className="btn btn-gold">
+      <motion.a {...fade(1.3)} href="#nominer" className="btn btn-gold">
         Faire mes nominations
       </motion.a>
 
