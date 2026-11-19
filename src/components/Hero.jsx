@@ -34,7 +34,7 @@ export default function Hero() {
       </motion.div>
 
       <motion.div {...fade(0.85)} className="hero-welcome">
-        <p className="hero-welcome-title">{WELCOME.title}</p>
+        <h2 className="hero-welcome-title">{WELCOME.title}</h2>
         {WELCOME.paragraphs.map((p) => (
           <p key={p}>{p}</p>
         ))}
