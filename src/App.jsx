@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Particles from './components/Particles.jsx'
 import Hero from './components/Hero.jsx'
+import Welcome from './components/Welcome.jsx'
 import Categories from './components/Categories.jsx'
 import NominationForm from './components/NominationForm.jsx'
 import Admin from './components/Admin.jsx'
@@ -30,6 +31,7 @@ export default function App() {
       ) : (
         <main>
           <Hero />
+          <Welcome />
           <Categories />
           <NominationForm />
           <footer className="footer">
