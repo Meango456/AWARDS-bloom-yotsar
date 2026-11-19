@@ -42,6 +42,8 @@ export const EVENT = {
   date: '24 décembre 2026',
   place: 'Bloom Centre Yotsar',
 }
+
+// Message de bienvenue affiché sous l'accueil : modifiez librement ces textes.
 export const WELCOME = {
   title: 'Bienvenue à la soirée des Splendeur Awards',
   paragraphs: [
