@@ -802,40 +802,28 @@ code {
   line-height: 1.5;
   text-align: center;
 }
-/* ---------- Message de bienvenue ---------- */
-.welcome {
-  padding-bottom: clamp(1rem, 4vw, 2rem);
-}
-.welcome-card {
-  max-width: 44rem;
-  margin: 0 auto;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.welcome-title {
-  font-size: clamp(1.7rem, 5vw, 2.6rem);
-  margin: 0;
-  background: var(--gold-grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.welcome-text {
-  font-family: var(--display);
-  font-size: clamp(1.15rem, 2.8vw, 1.4rem);
-  line-height: 1.7;
-  color: var(--ink);
-  opacity: 0.92;
-  margin: 0 0 1.1rem;
-  max-width: 38rem;
-}
-.welcome-sign {
-  font-family: var(--display);
-  font-style: italic;
-  color: var(--gold-hi);
-  margin: 0.6rem 0 0;
-  font-size: 1.1rem;
-}
 
+/* ---------- Message de bienvenue (dans l'en-tête) ---------- */
+.hero-welcome {
+  max-width: 38rem;
+  margin: 0 0 1.8rem;
+  text-align: center;
+}
+.hero-welcome-title {
+  font-size: clamp(1.5rem, 4.4vw, 2.1rem);
+  margin-bottom: 1rem;
+}
+.hero-welcome p {
+  font-family: var(--display);
+  font-size: clamp(1.15rem, 2.8vw, 1.35rem);
+  line-height: 1.65;
+  color: var(--ink);
+  opacity: 0.9;
+  margin: 0 0 0.9rem;
+}
+.hero-welcome .hero-welcome-sign {
+  color: var(--gold-hi);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
