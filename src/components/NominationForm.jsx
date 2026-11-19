@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { CATEGORIES } from '../lib/categories.js'
+import { CATEGORIES, EVENT } from '../lib/categories.js'
 import { isConfigured, supabase } from '../lib/supabase.js'
 import Icon from './Icon.jsx'
 
@@ -139,7 +139,7 @@ export default function NominationForm() {
               <p>
                 Vos nominations ont bien été enregistrées.
                 <br />
-                Rendez-vous le <strong>24 décembre</strong> pour la grande soirée.
+                Rendez-vous le <strong>{EVENT.date}</strong> pour la grande soirée.
               </p>
               <div className="confetti" aria-hidden="true">
                 {Array.from({ length: 24 }).map((_, i) => (
