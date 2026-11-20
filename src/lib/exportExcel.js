@@ -1,14 +1,15 @@
-import { CATEGORIES } from './categories.js'
-import { tally } from './tally.js'
+import { CATEGORIES, DIAMANT } from './categories.js'
+import { tally, tallyDiamant } from './tally.js'
 
 /**
  * Construit le classeur Excel des résultats.
  * - Feuille « Résultats » : nombre de voix par nominé, catégorie par catégorie
  * - Feuille « Nominations » : une ligne par votant (qui a voté pour qui)
+ * - Si des votes Diamant existent : leurs résultats s'ajoutent à « Résultats » + une feuille « Diamant (votes) »
  * `XLSX` est passé en paramètre pour pouvoir charger la librairie à la demande.
  */
-export function buildWorkbook(XLSX, rows) {
-  const results = tally(rows)
+export function buildWorkbook(XLSX, rows, diamantRows = []) {
+  const results = [...tally(rows), ...(diamantRows.length ? tallyDiamant(diamantRows) : [])]
   const wb = XLSX.utils.book_new()
 
   const res = []
@@ -30,6 +31,19 @@ export function buildWorkbook(XLSX, rows) {
   const wsAll = XLSX.utils.json_to_sheet(all)
   wsAll['!cols'] = [{ wch: 18 }, { wch: 16 }, { wch: 16 }, { wch: 28 }, ...CATEGORIES.map(() => ({ wch: 24 }))]
   XLSX.utils.book_append_sheet(wb, wsAll, 'Nominations')
+
+  if (diamantRows.length) {
+    const dia = diamantRows.map((r) => ({
+      Date: new Date(r.created_at).toLocaleString('fr-FR'),
+      Prénom: r.first_name,
+      Nom: r.last_name,
+      Email: r.email,
+      ...Object.fromEntries(DIAMANT.groups.map((g) => [g.title, r[g.key] || ''])),
+    }))
+    const wsDia = XLSX.utils.json_to_sheet(dia)
+    wsDia['!cols'] = [{ wch: 18 }, { wch: 16 }, { wch: 16 }, { wch: 28 }, { wch: 24 }, { wch: 24 }]
+    XLSX.utils.book_append_sheet(wb, wsDia, 'Diamant (votes)')
+  }
 
   return wb
 }
