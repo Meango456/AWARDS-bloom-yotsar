@@ -6,7 +6,7 @@ import DiamantVote from './components/DiamantVote.jsx'
 import Categories from './components/Categories.jsx'
 import NominationForm from './components/NominationForm.jsx'
 import Admin from './components/Admin.jsx'
-import { EVENT } from './lib/categories.js'
+
 
 function useHash() {
   const [hash, setHash] = useState(window.location.hash)
