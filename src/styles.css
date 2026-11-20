@@ -812,9 +812,8 @@ code {
   text-align: center;
 }
 .hero-welcome-title {
-  font-size: clamp(1.4rem, 4vw, 1.9rem);
+  font-size: clamp(1.5rem, 4.4vw, 2.1rem);
   margin-bottom: 1rem;
-  text-wrap: balance;
 }
 .hero-welcome p {
   font-family: var(--display);
@@ -823,7 +822,6 @@ code {
   color: var(--ink);
   opacity: 0.9;
   margin: 0 0 0.9rem;
-  text-wrap: pretty;
 }
 .hero-welcome .hero-welcome-sign {
   color: var(--gold-hi);
