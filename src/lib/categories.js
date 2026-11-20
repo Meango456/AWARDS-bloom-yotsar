@@ -1,3 +1,4 @@
+
 export const CATEGORIES = [
   {
     key: 'entrepreneur',
@@ -28,6 +29,13 @@ export const CATEGORIES = [
     icon: 'star',
   },
   {
+    key: 'diamant',
+    title: 'Diamant de la soirée',
+    short: 'Diamant',
+    desc: "La personne la mieux habillée de la soirée : un diamant pour elle, un diamant pour lui. Les votes auront lieu le 24 décembre 2026, pendant la cérémonie.",
+    icon: 'gem',
+  },
+  {
     key: 'solaire',
     title: 'Personne la plus solaire',
     short: 'Solaire',
@@ -47,7 +55,7 @@ export const EVENT = {
 export const WELCOME = {
   title: 'Choisissons les nominés des Splendeur Awards',
   paragraphs: [
-    "Chers invités, chers amis de Bloom,  nous vous invitons à proposer les personnes qui vous ont marqué cette année et qui, jour après jour, font briller notre communauté.",
+    "Chers invités, chers amis de Bloom, nous vous invitons à proposer les personnes qui vous ont marqué cette année et qui, jour après jour, font briller notre communauté.",
     "Prenez quelques minutes pour proposer un nom dans chacune des six distinctions. Les personnes les plus proposées seront retenues comme finalistes. Le vote pour désigner les lauréats aura lieu pendant la soirée.",
   ],
   signature: 'Chaque nomination est une manière de dire merci.',
