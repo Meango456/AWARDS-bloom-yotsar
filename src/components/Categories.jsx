@@ -16,7 +16,7 @@ export default function Categories() {
         <p className="eyebrow">
           <span>✦</span> Les distinctions <span>✦</span>
         </p>
-        <h2>Cinq prix, cinq manières de rayonner</h2>
+        <h2>Six prix, Six manières de rayonner</h2>
       </motion.div>
 
       <div className="cat-grid">
