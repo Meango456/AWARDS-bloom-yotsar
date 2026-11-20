@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { DIAMANT } from '../lib/categories.js'
 import { isConfigured, supabase } from '../lib/supabase.js'
-import { useDiamantOpen } from '../lib/diamant.js'
+import { useDiamantOpen } from '../lib/Diamant.js'
 import Icon from './Icon.jsx'
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/
