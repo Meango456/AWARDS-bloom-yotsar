@@ -53,13 +53,12 @@ export const WELCOME = {
   signature: 'Chaque nomination est une manière de dire merci.',
 }
 
-// Catégorie spéciale : le vote ne s'ouvre que le jour J (invisible pour les invités avant).
-// Les vraies dates se règlent dans l'espace organisateur ; demoOpensAt ne sert qu'en mode démo (sans Supabase).
 export const DIAMANT = {
   title: 'Diamant de la soirée',
   desc: 'La personne la mieux habillée de la soirée : un diamant pour elle, un diamant pour lui.',
   icon: 'gem',
   demoOpensAt: '2026-12-24T18:00:00Z',
+  message: 'Les votes pour cette catégorie seront ouverts le 24 décembre 2026, pendant la soirée.',
   groups: [
     { key: 'femme', title: 'Diamant féminin', label: 'La mieux habillée', icon: 'gem' },
     { key: 'homme', title: 'Diamant masculin', label: 'Le mieux habillé', icon: 'gem' },
