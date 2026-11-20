@@ -1,4 +1,4 @@
-import { CATEGORIES } from './categories.js'
+import { CATEGORIES, DIAMANT } from './categories.js'
 
 const norm = (s) =>
   s
@@ -18,8 +18,8 @@ const pretty = (s) =>
     .replace(/(^|[\s'-])(\p{L})/gu, (_, a, b) => a + b.toUpperCase())
 
 /** Compte les voix par catégorie en regroupant les orthographes proches (accents, casse, espaces). */
-export function tally(rows) {
-  return CATEGORIES.map((cat) => {
+function count(rows, cats) {
+  return cats.map((cat) => {
     const map = new Map()
     for (const r of rows) {
       const raw = r[cat.key]
@@ -34,3 +34,6 @@ export function tally(rows) {
     return { ...cat, list, total: list.reduce((n, x) => n + x.votes, 0) }
   })
 }
+
+export const tally = (rows) => count(rows, CATEGORIES)
+export const tallyDiamant = (rows) => count(rows, DIAMANT.groups)
