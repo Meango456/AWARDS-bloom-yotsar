@@ -44,7 +44,7 @@ export default function Hero() {
       <motion.p {...fade(1)} className="hero-sub">
         Nommez les personnalités qui illuminent <strong>Bloom</strong>.
         <br />
-        Cinq distinctions, une seule soirée d'exception.
+        Six distinctions, une seule soirée d'exception.
       </motion.p>
 
       <motion.div {...fade(1.15)} className="hero-meta">
