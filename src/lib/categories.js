@@ -45,12 +45,12 @@ export const EVENT = {
 
 // Message de bienvenue affiché sous l'accueil : modifiez librement ces textes.
 export const WELCOME = {
-  title: 'Bienvenue à la soirée des Splendeur Awards',
+  title: 'Choisissons les nominés des Splendeur Awards',
   paragraphs: [
-    "Chers invités, chers amis de Bloom, cette soirée est la nôtre : celle où nous honorons les personnes qui, jour après jour, font briller notre communauté.",
-    "Prenez quelques minutes pour nommer celles et ceux qui vous ont marqué cette année, dans chacune des cinq distinctions. Chaque nomination est une manière de dire merci.",
+    "Chers invités, chers amis de Bloom, avant le début de la soirée, nous vous invitons à proposer les personnes qui vous ont marqué cette année et qui, jour après jour, font briller notre communauté.",
+    "Prenez quelques minutes pour proposer un nom dans chacune des cinq distinctions. Les personnes les plus proposées seront retenues comme finalistes. Le vote pour désigner les lauréats aura lieu pendant la soirée.",
   ],
-  signature: 'Avec toute notre reconnaissance.',
+  signature: 'Chaque nomination est une manière de dire merci.',
 }
 
 // Catégorie spéciale : le vote ne s'ouvre que le jour J (invisible pour les invités avant).
