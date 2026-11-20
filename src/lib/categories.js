@@ -47,8 +47,8 @@ export const EVENT = {
 export const WELCOME = {
   title: 'Choisissons les nominés des Splendeur Awards',
   paragraphs: [
-    "Chers invités, chers amis de Bloom, avant le début de la soirée, nous vous invitons à proposer les personnes qui vous ont marqué cette année et qui, jour après jour, font briller notre communauté.",
-    "Prenez quelques minutes pour proposer un nom dans chacune des cinq distinctions. Les personnes les plus proposées seront retenues comme finalistes. Le vote pour désigner les lauréats aura lieu pendant la soirée.",
+    "Chers invités, chers amis de Bloom,  nous vous invitons à proposer les personnes qui vous ont marqué cette année et qui, jour après jour, font briller notre communauté.",
+    "Prenez quelques minutes pour proposer un nom dans chacune des six distinctions. Les personnes les plus proposées seront retenues comme finalistes. Le vote pour désigner les lauréats aura lieu pendant la soirée.",
   ],
   signature: 'Chaque nomination est une manière de dire merci.',
 }
