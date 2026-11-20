@@ -43,6 +43,9 @@ export const CATEGORIES = [
     icon: 'sun',
   },
 ]
+export const NOMINATION_CATEGORIES = CATEGORIES.filter(
+  (category) => category.key !== 'diamant'
+)
 
 export const EVENT = {
   name: 'Splendeur Awards',
